@@ -17,7 +17,7 @@
     <script>
       const text = document.getElementById("text");
       function resize() {
-        const scale = Math.min(window.innerWidth / text.offsetWidth, window.innerHeight / text.offsetHeight);
+        const scale = window.innerWidth / text.offsetWidth;
         text.style.transform = `scale(${scale})`;
       }
       window.addEventListener("resize", resize);
