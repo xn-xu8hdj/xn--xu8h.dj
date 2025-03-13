@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>📻.dj</title>
+  </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3H441C5J0K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3H441C5J0K');
+</script>
+  <body style="margin:0;display:flex;justify-content:center;align-items:center;height:100vh;width:100vw;overflow:hidden;">
+    <span id="text" style="font-size:10vw;white-space:nowrap;">📻️.dj</span>
+    <script>
+      const text = document.getElementById("text");
+      function resize() {
+        const scale = window.innerWidth / text.offsetWidth;
+        text.style.transform = `scale(${scale})`;
+      }
+      window.addEventListener("resize", resize);
+      resize();
+    </script>
+  </body>
+</html>
+
