@@ -18,14 +18,16 @@
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5HKCG9C7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <span id="text" style="font-size:10vw;white-space:nowrap;">
-      <a href="mailto:p@xn--xu8h.dj?subject=大文字全角Ｐの📻️.djお便り募集&body=ラジオネーム:%0Aおところ:%0Aお題 / ふつおた:%0A本文:%0A" 
-      style="position:fixed;bottom:20px;right:20px;padding:10px 20px;background-color:#007BFF;color:white;text-decoration:none;border-radius:5px;font-size:16px;">
+    <span id="text" style="font-size:10vw;white-space:nowrap;cursor:pointer;">
       📻️.dj
-      </a>
     </span>
     <script>
       const text = document.getElementById("text");
+      text.addEventListener("click", () => {
+        const mailto = "mailto:p@xn--xu8h.dj?subject=大文字全角Ｐの📻️.djお便り募集&body=ラジオネーム:%20📻️太郎%0Aおところ:%20東京都%0Aお題%20/%20ふつおた:%20ふつおた%0A本文:%20ここに本文を記入してください";
+        window.location.href = mailto;
+      });
+
       function resize() {
         const scale = window.innerWidth / text.offsetWidth;
         text.style.transform = `scale(${scale})`;
